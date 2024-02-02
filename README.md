@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Check my solution on frontend mentor [here]()
+- Solution URL: Check my solution on frontend mentor [here](https://www.frontendmentor.io/solutions/3-column-preview-card-component-using-css-flexbox-k4Wi-xa76m)
 - Live Site URL: checkout my live site [here](https://3-column-preview-card-component-tan.vercel.app/)
 
 ## My process
