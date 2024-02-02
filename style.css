@@ -1,0 +1,123 @@
+@layer reset {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: unset;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img,
+  picture,
+  svg,
+  canvas {
+    /* display: block; */
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+:root{
+    --sedan-bg: hsl(31, 77%, 52%);
+    --suv-bg: hsl(184, 100%, 22%);
+    --luxury-bg: hsl(179, 100%, 13%);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --heading-button: hsl(0, 0%, 95%); 
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+}
+.modal{
+    max-width: 15.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+.sedans{
+    background-color: var(--sedan-bg);
+}
+.sedans button{
+    color: var(--sedan-bg);
+}
+.suvs{
+    background-color: var(--suv-bg);
+}
+.suvs button{
+    color: var(--suv-bg);
+}
+.luxury{
+    background-color: var(--luxury-bg);
+}
+.luxury button{
+    color: var(--luxury-bg);
+}
+.modal>img{
+    height: 2rem;
+    width: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.modal h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    margin-bottom: 1.5rem;
+    color: var(--heading-button);
+    font-weight: 700;
+}
+.modal p{
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 4rem;
+    color: var(--paragraph);
+    font-weight: 400;
+    font-size: 0.94rem;
+}
+.modal button{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.75rem;
+}
+.modal button:hover, .modal button:active, .modal button:focus-visible{
+    background: transparent;
+    color: var(--heading-button);
+    border: 1px solid var(--heading-button);
+    cursor: pointer;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:47.19rem){
+    main{
+        margin-inline: auto;
+    }
+}
