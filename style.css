@@ -34,90 +34,99 @@
     }
   }
 }
-:root{
-    --sedan-bg: hsl(31, 77%, 52%);
-    --suv-bg: hsl(184, 100%, 22%);
-    --luxury-bg: hsl(179, 100%, 13%);
-    --paragraph: hsla(0, 0%, 100%, 0.75);
-    --heading-button: hsl(0, 0%, 95%); 
+:root {
+  --sedan-bg: hsl(31, 77%, 52%);
+  --suv-bg: hsl(184, 100%, 22%);
+  --luxury-bg: hsl(179, 100%, 13%);
+  --paragraph: hsla(0, 0%, 100%, 0.75);
+  --heading-button: hsl(0, 0%, 95%);
 }
-body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
-main{
-    display: flex;
-    flex-wrap: wrap;
-    margin-inline: auto;
+.wrapper {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  max-width: 16rem;
+  flex-direction: column;
 }
-.modal{
-    max-width: 15.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem;
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
 }
-.sedans{
-    background-color: var(--sedan-bg);
+.sedans {
+  background-color: var(--sedan-bg);
 }
-.sedans button{
-    color: var(--sedan-bg);
+.sedans .link {
+  color: var(--sedan-bg);
 }
-.suvs{
-    background-color: var(--suv-bg);
+.suvs {
+  background-color: var(--suv-bg);
 }
-.suvs button{
-    color: var(--suv-bg);
+.suvs .link {
+  color: var(--suv-bg);
 }
-.luxury{
-    background-color: var(--luxury-bg);
+.luxury {
+  background-color: var(--luxury-bg);
 }
-.luxury button{
-    color: var(--luxury-bg);
+.luxury .link {
+  color: var(--luxury-bg);
 }
-.modal>img{
-    height: 2rem;
-    width: 2.5rem;
-    margin-bottom: 1.5rem;
+.modal > img {
+  height: 2rem;
+  width: 2.5rem;
+  margin-bottom: 1.5rem;
 }
-.modal h1{
-    font-family: 'Big Shoulders Display', sans-serif;
-    margin-bottom: 1.5rem;
-    color: var(--heading-button);
-    font-weight: 700;
+.modal h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  margin-bottom: 1.5rem;
+  color: var(--heading-button);
+  font-weight: 700;
 }
-.modal p{
-    font-family: 'Lexend Deca', sans-serif;
-    margin-bottom: 4rem;
-    color: var(--paragraph);
-    font-weight: 400;
-    font-size: 0.94rem;
+.modal p {
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 4rem;
+  color: var(--paragraph);
+  font-weight: 400;
+  font-size: 0.94rem;
 }
-.modal button{
-    font-family: 'Lexend Deca', sans-serif;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: none;
-    font-size: 0.75rem;
+.modal .link {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid var(--heading-button);
 }
-.modal button:hover, .modal button:active, .modal button:focus-visible{
-    background: transparent;
-    color: var(--heading-button);
-    border: 1px solid var(--heading-button);
-    cursor: pointer;
+.modal .link:hover,
+.modal .link:active,
+.modal .link:focus-visible {
+  background: transparent;
+  color: var(--heading-button);
+  cursor: pointer;
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
-@media screen and (max-width:47.19rem){
-    main{
-        margin-inline: auto;
-    }
+@media screen and (min-width: 590px) {
+  .wrapper {
+    flex-direction: row;
+    max-width: 46.5rem;
+  }
 }
