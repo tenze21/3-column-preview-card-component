@@ -91,6 +91,8 @@ body {
   margin-bottom: 1.5rem;
   color: var(--heading-button);
   font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: -1%;
 }
 .modal p {
   font-family: "Lexend Deca", sans-serif;
@@ -98,6 +100,7 @@ body {
   color: var(--paragraph);
   font-weight: 400;
   font-size: 0.94rem;
+  line-height: 2.5ch;
 }
 .modal .link {
   font-family: "Lexend Deca", sans-serif;
